@@ -18,6 +18,12 @@ RUN yum install -y \
 
 RUN yum install -y git
 
+RUN yum install -y openssl
+
+RUN yum install -y emacs
+
+RUN yum install -y postgresql
+
 ENV JAVA_HOME /etc/alternatives/jre
 
 # Agent bond including Jolokia and jmx_exporter
